@@ -1,0 +1,20 @@
+<div class="container offers-list-container">
+    <div *ngFor="let offer of offers" class="row offer">
+        <div class="col-3 col-offset-2">
+            <img src="assets/offers/{{offer.skuName}}/icon.jpg" class="img-thumbnail">
+        </div>
+        <div class="col-9">
+            <p class="title">{{offer.title}}</p>
+            <p>
+                <a href="{{offer.links[0]}}" *ngIf="!offer.editing">{{offer.links[0]}}</a>
+                <input type="text" class="form-control" *ngIf="offer.editing" [(ngModel)]="offer.links[0]" [ngModelOptions]="{standalone: true}" [compareWith]="compareFn" (focusout)="edit(offer)" autofocus >
+                <span class="offer-edit-button" (click)="edit(offer)" *ngIf="!offer.editing && !newUrl">
+                    <img class="offer-edit-icon" src="../../../assets/icons/edit.png">
+                </span>
+            </p>
+            <div class="categories-container">
+                <span class="category category-{{category}}" *ngFor="let category of offer.categories">{{category}}</span>
+            </div> 
+        </div>
+    </div>
+</div>

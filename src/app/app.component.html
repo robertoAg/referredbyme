@@ -1,0 +1,45 @@
+<header>
+    <img src="../assets/icons/person.png" class="img-thumbnail">
+    <h1 class="text-center">Your refferal list</h1>
+    <h5 class="text-center">Free. Quick. Util. Clean.</h5>
+</header>
+
+<div class="main container">
+
+    <div class="claim row">
+        <div class="container">
+            <div class="icons row">
+                <div class="edit-icon-container col-4">
+                    <img src="../assets/icons/edit.png" class="img-thumbnail">
+                    <p class="text-center margin-bottom-0">Edit</p>
+                    <p class="text-center sub-info">Copy|Paste your own links</p>
+                </div>
+                <div class="get-icon-container col-4">
+                    <img src="../assets/icons/domain.png" class="img-thumbnail">
+                    <p class="text-center"><button class="btn btn-success" (click)="getUrl()" [disabled]="newUrl">Generate URL</button></p>
+                </div>
+                <div class="share-icon-container col-4">
+                    <img src="../assets/icons/share.png" class="img-thumbnail">
+                    <p class="text-center margin-bottom-0">Share</p>
+                    <p class="text-center sub-info">Anywhere</p>
+                </div>
+            </div>
+            <div class="url-row row" *ngIf="newUrl">
+                <div class="col-12">
+                    <p class="text-center">
+                        <span class="new-url">{{newUrl}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error-msg row">
+        <div *ngIf="error" class="col-12 alert alert-warning">{{error}}</div>
+    </div>
+</div>
+<app-offers-list [offers]="pageOffers" [newUrl]="newUrl"></app-offers-list>
+
+<footer class="text-center">
+    <p>Referred World ({{year}})</p>
+</footer>
