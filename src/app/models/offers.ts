@@ -7,4 +7,6 @@ export class Offer{
     images: string[];
     categories: string[];
     editing?: boolean;
+    validation?: string;
+    isValid?: boolean;
 }

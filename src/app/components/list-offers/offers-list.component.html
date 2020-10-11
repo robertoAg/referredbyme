@@ -7,10 +7,14 @@
             <p class="title"><a href="{{offer.links[0]}}">{{offer.title}}</a></p>
             <p>
                 <a href="{{offer.links[0]}}" *ngIf="!offer.editing">{{offer.links[0]}}</a>
-                <input type="text" class="form-control" *ngIf="offer.editing" [(ngModel)]="offer.links[0]" [ngModelOptions]="{standalone: true}" [compareWith]="compareFn" (focusout)="edit(offer)" autofocus >
+                <input type="text" class="form-control" *ngIf="offer.editing" [(ngModel)]="offer.links[0]" [ngModelOptions]="{standalone: true}" [compareWith]="compareFn" (focusout)="validate(offer, o); edit(offer)" autofocus >
                 <span class="offer-edit-button" (click)="edit(offer)" *ngIf="!offer.editing && !newUrl">
                     <img class="offer-edit-icon" src="../../../assets/icons/edit.png">
                 </span>
+            </p>
+            <p *ngIf="offer.isValid === false" class="info-error">
+                <i class="fas fa-exclamation-triangle"></i>
+                Link must start by {{offer.validation}}
             </p>
             <div class="categories-container">
                 <div class="category category-{{category}}" *ngFor="let category of offer.categories">
