@@ -3,7 +3,7 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class LinkService {
-    //private url = 'http://localhost:8080/api/link';
+    // private url = 'http://localhost:8080/api/link';
     private url = 'https://api-referredbyme.herokuapp.com/api/link';
     constructor(private  httpClient: HttpClient) { }
 

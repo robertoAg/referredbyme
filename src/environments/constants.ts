@@ -1,6 +1,15 @@
 
 export const originalOffers = [
     {
+        id: 4,
+        skuName: 'publish0x',
+        title: 'publish0x',
+        links: ['https://www.publish0x.com?a=M7e5yp9Ke2'],
+        description: '',
+        images: [],
+        categories: ['bitcoin', 'news']
+    },
+    {
         id: 1,
         skuName: 'presearch',
         title: 'presearch',
@@ -25,22 +34,13 @@ export const originalOffers = [
         links: ['https://brave.com/tub720'],
         description: '',
         images: [],
-        categories: ['bitcoin']
-    },
-    {
-        id: 4,
-        skuName: 'publish0x',
-        title: 'publish0x',
-        links: ['https://www.publish0x.com?a=M7e5yp9Ke2'],
-        description: '',
-        images: [],
-        categories: ['bitcoin']
+        categories: ['bitcoin', 'app']
     },
     {
         id: 5,
         skuName: 'clipclaps',
         title: 'clipclaps',
-        links: [''],
+        links: ['https://website.cc.lerjin.com/i/1522085367'],
         description: '',
         images: [],
         categories: ['app', 'games', 'video', 'money']
@@ -61,7 +61,7 @@ export const originalOffers = [
         links: ['https://moremoney.io/?ref=440522'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads']
+        categories: ['bitcoin', 'ads', 'faucet']
     },
     {
         id: 8,
@@ -70,7 +70,7 @@ export const originalOffers = [
         links: ['http://cointiply.com/r/V2dE1'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads']
+        categories: ['bitcoin', 'ads', 'faucet']
     },
     {
         id: 9,
@@ -97,7 +97,7 @@ export const originalOffers = [
         links: ['https://firefaucet.win/ref/tublumblun'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads']
+        categories: ['bitcoin', 'ads', 'faucet']
     },
     {
         id: 12,
@@ -106,6 +106,6 @@ export const originalOffers = [
         links: ['https://www.faucetcrypto.com/ref/421708'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads']
+        categories: ['bitcoin', 'ads', 'faucet']
     }
 ];
