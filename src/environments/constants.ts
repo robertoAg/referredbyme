@@ -51,16 +51,6 @@ export const originalOffers = [
         validation: 'https://website.cc.lerjin.com/i/'
     },
     {
-        id: 6,
-        skuName: 'honeygain',
-        title: 'honey gain',
-        links: ['https://r.honeygain.me/ERTTAC42F2'],
-        description: '',
-        images: [],
-        categories: ['app', 'money'],
-        validation: 'https://r.honeygain.me/'
-    },
-    {
         id: 7,
         skuName: 'moremoney',
         title: 'more money',
@@ -79,6 +69,16 @@ export const originalOffers = [
         images: [],
         categories: ['ads', 'bitcoin', 'faucet'],
         validation: 'http://cointiply.com/r/'
+    },
+    {
+        id: 6,
+        skuName: 'honeygain',
+        title: 'honey gain',
+        links: ['https://r.honeygain.me/ERTTAC42F2'],
+        description: '',
+        images: [],
+        categories: ['app', 'money'],
+        validation: 'https://r.honeygain.me/'
     },
     {
         id: 9,

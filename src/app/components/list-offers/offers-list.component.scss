@@ -30,10 +30,10 @@
     margin: 5px 0;
 }
 div.category {
-    display: inline;
+    display: inline-block;
     font-family: 'Nunito', sans-serif;
     text-transform: capitalize;
-    font-size: 13px;
+    font-size: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 3px 5px;
@@ -72,7 +72,7 @@ div.category.category-news{
     background-color: rgb(224, 198, 158);
 }
 .offer-category-icon{
-    width: 20px;
+    width: 15px;
     height: auto;
     margin-top: -2px;
 }
@@ -90,4 +90,12 @@ div.category.category-news{
     height: auto;
     margin: 2px auto 0;
     display: block;
+}
+@media(min-width: 650px){
+    div.category {
+        font-size: 13px;
+    }
+    .offer-category-icon{
+        width: 20px;
+    }
 }
