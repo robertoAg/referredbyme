@@ -37,7 +37,7 @@ export const originalOffers = [
         links: ['https://brave.com/tub720'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'app'],
+        categories: ['app', 'bitcoin'],
         validation: 'https://brave.com/'
     },
     {
@@ -47,7 +47,7 @@ export const originalOffers = [
         links: ['https://website.cc.lerjin.com/i/1522085367'],
         description: '',
         images: [],
-        categories: ['app', 'games', 'video', 'money'],
+        categories: ['app', 'games', 'money', 'video'],
         validation: 'https://website.cc.lerjin.com/i/'
     },
     {
@@ -67,7 +67,7 @@ export const originalOffers = [
         links: ['https://moremoney.io/?ref=440522'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads', 'faucet'],
+        categories: ['ads', 'bitcoin', 'faucet'],
         validation: 'https://moremoney.io/?ref='
     },
     {
@@ -77,7 +77,7 @@ export const originalOffers = [
         links: ['http://cointiply.com/r/V2dE1'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads', 'faucet'],
+        categories: ['ads', 'bitcoin', 'faucet'],
         validation: 'http://cointiply.com/r/'
     },
     {
@@ -87,7 +87,7 @@ export const originalOffers = [
         links: ['https://www.coinpayu.com/?r=tublumblun'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads'],
+        categories: ['ads', 'bitcoin'],
         validation: 'https://www.coinpayu.com/?r='
     },
     {
@@ -97,7 +97,7 @@ export const originalOffers = [
         links: ['https://r.adbtc.top/1854877'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads'],
+        categories: ['ads', 'bitcoin'],
         validation: 'https://r.adbtc.top/'
     },
     {
@@ -107,7 +107,7 @@ export const originalOffers = [
         links: ['https://firefaucet.win/ref/tublumblun'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads', 'faucet'],
+        categories: ['ads', 'bitcoin', 'faucet'],
         validation: 'https://firefaucet.win/ref/'
     },
     {
@@ -117,7 +117,7 @@ export const originalOffers = [
         links: ['https://www.faucetcrypto.com/ref/421708'],
         description: '',
         images: [],
-        categories: ['bitcoin', 'ads', 'faucet'],
+        categories: ['ads', 'bitcoin', 'faucet'],
         validation: 'https://www.faucetcrypto.com/ref/'
     }
 ];
